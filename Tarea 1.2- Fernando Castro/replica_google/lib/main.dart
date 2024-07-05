@@ -13,11 +13,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     const String titulo1 = "Tu Cuenta esta protegida";
     const String parrafo1 =
-        "La verificacion de seguridad reviso tu cuenta y no encontro acciones recomendadas";
+        "La verificacion de seguridad reviso tu cuenta y no encontro acciones recomendadas.";
     const String detalle1 = "Ver detalle";
     const String titulo2 = "Verificacion de privacidad";
     const String parrafo2 =
-        "Elige la configuracion de privacidad indicada para ti con esta guia paso a paso";
+        "Elige la configuracion de privacidad indicada para ti con esta guia paso a paso.";
     const String detalle2 = "Realizar la verificacion de privacidad";
     const String parrafo3 = "Solo tu puedes ver la configuracion. Tambien puedes revidar la configuracion de Maps , la busqueda o cualquier servicio de google que uses con frecuencia. Google proteje la privacidad y la seguridad de tus datos.";
 
@@ -62,7 +62,7 @@ class MyApp extends StatelessWidget {
                           const SizedBox(
                             height: 10,
                           ),
-                          caja(Icons.question_answer,
+                          caja(Icons.help,
                               "    Ver las opciones de ayuda"),
                           const SizedBox(
                             height: 10,
@@ -116,7 +116,7 @@ class Contenido extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     const texts = TextStyle(
-        color: Color.fromARGB(255, 7, 44, 100),
+        color: Colors.blue,
         fontFamily: AutofillHints.addressCityAndState,
         fontSize: 12);
     const titulos = TextStyle(
@@ -144,16 +144,16 @@ class Contenido extends StatelessWidget {
               Text(
                 text3,
                 style: texts,
-              )
+              ), const SizedBox(height: 15,)
             ],
           ),
         ),
         Container(
             decoration: const BoxDecoration(
-              color: Color.fromARGB(96, 143, 150, 142),
               shape: BoxShape.circle,
             ),
-            child: const Icon(Icons.gpp_good_outlined , size:50))
+            child: const  FlutterLogo(size:50), 
+            )
       ],
     );
   }
