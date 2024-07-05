@@ -153,9 +153,7 @@ class Contenido extends StatelessWidget {
               color: Color.fromARGB(96, 143, 150, 142),
               shape: BoxShape.circle,
             ),
-            child: const FlutterLogo(
-              size: 80,
-            ))
+            child: const Icon(Icons.gpp_good_outlined , size:50))
       ],
     );
   }
